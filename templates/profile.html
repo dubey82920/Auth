@@ -1,0 +1,12 @@
+{% extends 'navbar.html'%}
+{% block title %}Profile{% endblock title %} 
+{% block body %}
+<div class="container">
+    {% for user in profile%}
+        <p>User is{{user.username}}</p>
+
+
+    {%endfor%}
+</div>
+
+{% endblock body%}

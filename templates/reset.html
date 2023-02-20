@@ -1,0 +1,19 @@
+{%extends 'navbar.html' %} {%block body %}
+
+
+<h3>Enter new password</h3>
+<p>
+  Please enter your password twice so we can verify you typed it in
+  correctly
+</p>
+<br />
+
+<form class="form" method="POST">
+  {%csrf_token%}
+  {{form.as_p}}
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+{%endblock body %}
